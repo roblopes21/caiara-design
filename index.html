@@ -195,8 +195,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Preload hero video para LCP mais rápido -->
+  <link rel="preload" as="video" href="hero-loop-web.mp4" type="video/mp4"/>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -608,13 +610,13 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-video-wrap">
-    <video id="heroVideo"  class="hv hv-a" autoplay muted playsinline>
+    <video id="heroVideo" class="hv hv-a" autoplay muted playsinline preload="auto">
       <source src="hero-loop-web.mp4" type="video/mp4">
     </video>
-    <video id="heroVideo2" class="hv hv-b" muted playsinline preload="auto">
+    <video id="heroVideo2" class="hv hv-b" muted playsinline preload="none">
       <source src="hero-loop-2.mp4" type="video/mp4">
     </video>
-    <video id="heroVideo3" class="hv hv-b" muted playsinline preload="auto">
+    <video id="heroVideo3" class="hv hv-b" muted playsinline preload="none">
       <source src="hero-loop-3.mp4" type="video/mp4">
     </video>
   </div>
@@ -797,7 +799,7 @@
       <!-- 1 - Creative Hub (Caiara) -->
       <div class="wi wi-tall has-video">
         <div class="wi-bg"></div>
-        <video class="wi-video" autoplay loop muted playsinline preload="auto" poster="petrec-hub-poster.jpg">
+        <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="petrec-hub-poster.jpg">
           <source src="petrec-hub-loop.mp4" type="video/mp4">
         </video>
         <div class="wi-overlay">
@@ -810,7 +812,7 @@
       <!-- 2 - FisioRelatório (Caiara) -->
       <div class="wi wi-tall has-video">
         <div class="wi-bg"></div>
-        <video class="wi-video" autoplay loop muted playsinline preload="auto" poster="fisiorelatorio-poster.jpg">
+        <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="fisiorelatorio-poster.jpg">
           <source src="fisiorelatorio-loop.mp4" type="video/mp4">
         </video>
         <div class="wi-overlay">
@@ -826,7 +828,7 @@
       <!-- E-Prod -->
       <div class="wi wi-med has-video">
         <div class="wi-bg"></div>
-        <video class="wi-video" autoplay loop muted playsinline preload="auto" poster="eprod-poster.jpg">
+        <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="eprod-poster.jpg">
           <source src="hero-loop-web.mp4" type="video/mp4">
         </video>
         <div class="wi-mock" id="eprod-svg-fallback">
@@ -848,7 +850,7 @@
       <!-- GeoMaps -->
       <div class="wi wi-med has-video">
         <div class="wi-bg"></div>
-        <video class="wi-video" autoplay loop muted playsinline preload="auto" poster="geomaps-poster.jpg">
+        <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="geomaps-poster.jpg">
           <source src="geomaps-loop.mp4" type="video/mp4">
         </video>
         <div class="wi-overlay">
@@ -861,7 +863,7 @@
       <!-- HealthScan -->
       <div class="wi wi-med has-video">
         <div class="wi-bg"></div>
-        <video class="wi-video" autoplay loop muted playsinline preload="auto" poster="healthscan-poster.jpg">
+        <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="healthscan-poster.jpg">
           <source src="healthscan-loop.mp4" type="video/mp4">
         </video>
         <div class="wi-overlay">
@@ -877,7 +879,7 @@
       <!-- SISROC -->
       <div class="wi wi-med has-video">
         <div class="wi-bg"></div>
-        <video class="wi-video" autoplay loop muted playsinline preload="auto" poster="sisroc-poster.jpg">
+        <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="sisroc-poster.jpg">
           <source src="sisroc-loop.mp4" type="video/mp4">
         </video>
         <div class="wi-overlay">
@@ -921,7 +923,7 @@
       <!-- LithoLib -->
       <div class="wi wi-sm has-video">
         <div class="wi-bg"></div>
-        <video class="wi-video" autoplay loop muted playsinline preload="auto" poster="litholib-poster.jpg">
+        <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="litholib-poster.jpg">
           <source src="litholib-loop.mp4" type="video/mp4">
         </video>
         <div class="wi-overlay">
@@ -934,7 +936,7 @@
       <!-- RockLab (último) -->
       <div class="wi wi-sm has-video">
         <div class="wi-bg"></div>
-        <video class="wi-video" autoplay loop muted playsinline preload="auto" poster="rocklab-poster.jpg">
+        <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="rocklab-poster.jpg">
           <source src="rocklab-loop.mp4" type="video/mp4">
         </video>
         <div class="wi-overlay">
@@ -981,7 +983,7 @@
       </div>
       <div class="vis-frame">
         <div class="mockup-box" style="overflow:hidden;background:#000;">
-          <video autoplay loop muted playsinline poster="interface-craft-poster.jpg"
+          <video loop muted playsinline preload="none" data-autoplay poster="interface-craft-poster.jpg"
                  style="width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit;">
             <source src="interface-craft-loop.mp4" type="video/mp4">
           </video>
@@ -1502,12 +1504,29 @@ document.querySelectorAll('a,button,.sv-item,.wi').forEach(el => {
   setTimeout(() => { if (current === 0) next(); }, 15000);
 })();
 
+// ═══ LAZY LOAD WORK VIDEOS ═════════════════════
+(function() {
+  const lazyVids = document.querySelectorAll('video[data-autoplay]');
+  if (!lazyVids.length) return;
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const v = entry.target;
+      if (entry.isIntersecting) {
+        if (v.readyState === 0) v.load();   // trigger load on first entry
+        v.play().catch(() => {});
+        obs.unobserve(v);                   // só precisa iniciar uma vez
+      }
+    });
+  }, { rootMargin: '200px' });             // começa a carregar 200px antes de entrar na tela
+  lazyVids.forEach(v => obs.observe(v));
+})();
+
 // ═══ LOADER ════════════════════════════════════
 window.addEventListener('load', () => {
   const ld = document.getElementById('loader');
   setTimeout(() => {
-    gsap.to(ld, { opacity:0, duration:.8, ease:'power2.inOut', onComplete:()=>{ ld.style.display='none'; initAnim(); } });
-  }, 2800);
+    gsap.to(ld, { opacity:0, duration:.6, ease:'power2.inOut', onComplete:()=>{ ld.style.display='none'; initAnim(); } });
+  }, 800); // reduzido de 2800ms → 800ms para melhorar LCP
 });
 
 // ═══ NAV SCROLL ════════════════════════════════
