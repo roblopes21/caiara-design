@@ -532,6 +532,9 @@
 
     /* ─── MOBILE (480px) ─────────────────────── */
     @media(max-width:480px) {
+      nav{padding:14px 18px}
+      .nav-cta{display:none}
+      .nav-logo{height:38px}
       .wk-featured{grid-template-columns:1fr}
       .wk-row{grid-template-columns:1fr}
       .wk-row-2{grid-template-columns:1fr}
@@ -603,14 +606,8 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-video-wrap">
-    <video id="heroVideo"  class="hv hv-a" autoplay muted playsinline>
+    <video id="heroVideo" class="hv hv-a" autoplay muted playsinline loop>
       <source src="hero-loop-web.mp4" type="video/mp4">
-    </video>
-    <video id="heroVideo2" class="hv hv-b" muted playsinline preload="auto">
-      <source src="hero-loop-2.mp4" type="video/mp4">
-    </video>
-    <video id="heroVideo3" class="hv hv-b" muted playsinline preload="auto">
-      <source src="hero-loop-3.mp4" type="video/mp4">
     </video>
   </div>
 
@@ -1452,47 +1449,8 @@ document.querySelectorAll('a,button,.sv-item,.wi').forEach(el => {
   el.addEventListener('mouseleave',()=>document.body.classList.remove('hov'));
 });
 
-// ═══ HERO CROSSFADE ════════════════════════════
-(function() {
-  const videos = [
-    document.getElementById('heroVideo'),
-    document.getElementById('heroVideo2'),
-    document.getElementById('heroVideo3')
-  ].filter(Boolean);
-  if (videos.length < 2) return;
-
-  const FADE = 1600;
-  let current = 0;
-  let transitioning = false;
-
-  // Aplicar transição em todos
-  videos.forEach(v => { v.style.transition = `opacity ${FADE}ms ease`; });
-
-  function next() {
-    if (transitioning) return;
-    transitioning = true;
-
-    const prev = current;
-    current = (current + 1) % videos.length;
-
-    // Esconde o atual
-    videos[prev].style.opacity = '0';
-
-    // Mostra o próximo
-    videos[current].currentTime = 0;
-    videos[current].style.opacity = '.38';
-    videos[current].play().catch(() => {});
-
-    // Depois do fade, pausa o anterior
-    setTimeout(() => {
-      videos[prev].pause();
-      transitioning = false;
-    }, FADE + 100);
-  }
-
-  // Cada vídeo ao terminar chama o próximo
-  videos.forEach(v => v.addEventListener('ended', next));
-})();
+// ═══ HERO VIDEO (single loop) ══════════════════
+// hero-loop-web.mp4 plays in loop via HTML attribute
 
 // ═══ LOADER ════════════════════════════════════
 window.addEventListener('load', () => {
