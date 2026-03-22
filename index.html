@@ -344,7 +344,7 @@
     .wk-row { display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:2px; }
     .wk-row-2 { display:grid;grid-template-columns:repeat(2,1fr);gap:2px; }
 
-    .wi { position:relative;overflow:hidden;cursor:none;opacity:0;transform:translateY(50px); }
+    .wi { position:relative;overflow:hidden;cursor:pointer;opacity:0;transform:translateY(50px); }
     .wi-tall { aspect-ratio:auto;min-height:480px; }
     .wi-med  { aspect-ratio:16/9; }
     .wi-sm   { aspect-ratio:4/3; }
@@ -428,6 +428,45 @@
     /* keep overlay on top */
     .wi-overlay { z-index:10; }
     .wi-vhint { z-index:11; }
+
+    /* ─── WORK MODAL ─────────────────────────── */
+    .wk-modal { position:fixed;inset:0;z-index:9000;display:flex;align-items:center;justify-content:center;padding:20px;
+      opacity:0;pointer-events:none;transition:opacity .35s ease; }
+    .wk-modal.open { opacity:1;pointer-events:all; }
+    .wk-modal-backdrop { position:absolute;inset:0;background:rgba(4,10,14,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px); }
+    .wk-modal-inner { position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;max-width:960px;width:100%;max-height:90vh;
+      background:var(--dark-mid);border:1px solid rgba(26,107,122,.35);border-radius:16px;overflow:hidden;
+      box-shadow:0 40px 120px rgba(0,0,0,.7);
+      transform:translateY(30px) scale(.97);transition:transform .35s ease; }
+    .wk-modal.open .wk-modal-inner { transform:translateY(0) scale(1); }
+    .wk-modal-media { position:relative;aspect-ratio:auto;min-height:320px;overflow:hidden;background:#060a0c; }
+    .wk-modal-media video,.wk-modal-media img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover; }
+    .wk-modal-body { display:flex;flex-direction:column;justify-content:flex-start;padding:44px 40px;overflow-y:auto;gap:0; }
+    .wk-modal-close { position:absolute;top:16px;right:16px;z-index:20;width:36px;height:36px;border-radius:50%;border:1px solid rgba(241,242,238,.15);
+      background:rgba(10,37,51,.7);color:var(--light);font-size:18px;line-height:1;cursor:pointer;
+      display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s; }
+    .wk-modal-close:hover { background:rgba(26,107,122,.5);border-color:var(--teal-mid); }
+    .wk-modal-tag { font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-lt);
+      background:rgba(15,59,75,.7);border:1px solid rgba(26,107,122,.4);padding:4px 14px;border-radius:100px;
+      width:fit-content;margin-bottom:20px;display:inline-block; }
+    .wk-modal-title { font-family:var(--serif);font-size:clamp(26px,3vw,38px);line-height:1.1;margin-bottom:16px; }
+    .wk-modal-desc { font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:20px; }
+    .wk-modal-extra { font-size:13px;color:rgba(241,242,238,.5);line-height:1.7;margin-bottom:32px;padding-top:16px;
+      border-top:1px solid var(--border); }
+    .wk-modal-cta { display:inline-flex;align-items:center;gap:8px;background:var(--teal-mid);color:var(--light);
+      padding:13px 24px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;
+      transition:background .2s;width:fit-content;margin-top:auto; }
+    .wk-modal-cta:hover { background:#1f7d8e; }
+    /* click hint arrow on cards */
+    .wi-click-hint { position:absolute;bottom:28px;right:20px;z-index:12;font-size:10px;letter-spacing:.1em;
+      text-transform:uppercase;color:rgba(241,242,238,.35);display:flex;align-items:center;gap:5px;
+      transition:color .3s; }
+    .wi:hover .wi-click-hint { color:rgba(241,242,238,.75); }
+    @media(max-width:760px) {
+      .wk-modal-inner { grid-template-columns:1fr;max-height:92vh; }
+      .wk-modal-media { min-height:220px;aspect-ratio:16/9; }
+      .wk-modal-body { padding:28px 24px; }
+    }
 
     /* ─── CREDENTIALS BAND ───────────────────── */
     #creds { padding:80px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border); }
@@ -797,7 +836,8 @@
     <!-- FEATURED ROW — Produtos Caiara -->
     <div class="wk-featured">
       <!-- 1 - Creative Hub (Caiara) -->
-      <div class="wi wi-tall has-video">
+      <div class="wi wi-tall has-video"
+           data-modal-extra="Desenvolvido do zero pela Caiara, o Creative Hub centraliza todo o fluxo criativo de agências e times de marketing. Integra geração de copy com IA (posts, captions, threads), publicação direta no LinkedIn e Instagram, biblioteca de ativos e painel de projetos ativos — tudo em uma interface que os designers realmente usam.">
         <div class="wi-bg"></div>
         <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="petrec-hub-poster.jpg">
           <source src="petrec-hub-loop.mp4" type="video/mp4">
@@ -807,10 +847,12 @@
           <h3 class="wi-name">Creative Hub</h3>
           <p class="wi-client" data-i18n="wk_hub_c">Sistema de gestão de marketing e design criado pela Caiara — IA para textos de social media, gestão de conteúdo e integração com LinkedIn e Instagram</p>
         </div>
+        <span class="wi-click-hint"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> ver projeto</span>
       </div>
 
       <!-- 2 - FisioRelatório (Caiara) -->
-      <div class="wi wi-tall has-video">
+      <div class="wi wi-tall has-video"
+           data-modal-extra="Plataforma SaaS desenvolvida pela Caiara para fisioterapeutas clínicos. O fluxo de geração de laudos foi redesenhado do zero — a IA sugere estrutura, terminologia e conclusões com base nos dados do paciente, enquanto o profissional mantém controle total antes de assinar. Resultado: 40% menos tempo por laudo, validado em clínica parceira em operação real.">
         <div class="wi-bg"></div>
         <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="fisiorelatorio-poster.jpg">
           <source src="fisiorelatorio-loop.mp4" type="video/mp4">
@@ -820,13 +862,15 @@
           <h3 class="wi-name">FisioRelatório</h3>
           <p class="wi-client" data-i18n="wk_fisio_c">Plataforma para fisioterapeutas desenvolvida pela Caiara — acelera 40% a criação de laudos com IA e supervisão humana, validada em clínica</p>
         </div>
+        <span class="wi-click-hint"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> ver projeto</span>
       </div>
     </div>
 
     <!-- ROW 2 — E-Prod + GeoMaps + HealthScan -->
     <div class="wk-row">
       <!-- E-Prod -->
-      <div class="wi wi-med has-video">
+      <div class="wi wi-med has-video"
+           data-modal-extra="Dashboard de monitoramento de produção de poços em tempo real, desenvolvido por Rob Lopes como Head of Design na PETREC para cliente do setor de Oil & Gas. Exibe volumes de óleo, gás e água, pressões, BSW e alertas para equipes de campo e salas de controle — desenhado para leitura rápida em ambientes operacionais 24/7.">
         <div class="wi-bg"></div>
         <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="eprod-poster.jpg">
           <source src="hero-loop-web.mp4" type="video/mp4">
@@ -845,10 +889,12 @@
           <h3 class="wi-name">E-Prod</h3>
           <p class="wi-client" data-i18n="wk_eprod_c">UX/UI design para dashboard de monitoramento de produção de poços em tempo real — volumes, pressões, BSW e alertas para equipes de campo</p>
         </div>
+        <span class="wi-click-hint"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> ver projeto</span>
       </div>
 
       <!-- GeoMaps -->
-      <div class="wi wi-med has-video">
+      <div class="wi wi-med has-video"
+           data-modal-extra="Plataforma de mapeamento geológico interativo desenvolvida por Rob Lopes na PETREC para projetos da ANP. Permite visualização geoespacial de dados sísmicos em 2D/3D, localização de poços, estruturas de reservatório e interpretações litoestratigráficas — integrando múltiplas fontes de dados em uma interface navegável para geólogos e engenheiros de reservatório.">
         <div class="wi-bg"></div>
         <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="geomaps-poster.jpg">
           <source src="geomaps-loop.mp4" type="video/mp4">
@@ -858,10 +904,12 @@
           <h3 class="wi-name">GeoMaps</h3>
           <p class="wi-client" data-i18n="wk_geomaps_c">UX/UI design para plataforma de mapeamento geológico — visualização geoespacial de dados sísmicos, poços e estruturas de reservatório</p>
         </div>
+        <span class="wi-click-hint"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> ver projeto</span>
       </div>
 
       <!-- HealthScan -->
-      <div class="wi wi-med has-video">
+      <div class="wi wi-med has-video"
+           data-modal-extra="Plataforma de IA em radiologia desenvolvida na PETREC. Analisa automaticamente radiografias e tomografias com modelos de deep learning — detecta, localiza e quantifica achados como nódulos, consolidações e fraturas. O design priorizou clareza na leitura dos resultados e confiança clínica: cada achado tem indicador de confiança da IA e campo de validação do radiologista.">
         <div class="wi-bg"></div>
         <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="healthscan-poster.jpg">
           <source src="healthscan-loop.mp4" type="video/mp4">
@@ -871,13 +919,15 @@
           <h3 class="wi-name">HealthScan</h3>
           <p class="wi-client" data-i18n="wk_health_c">UX/UI design para plataforma de IA em radiologia — análise automatizada de radiografias e tomografias com detecção e quantificação de achados</p>
         </div>
+        <span class="wi-click-hint"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> ver projeto</span>
       </div>
     </div>
 
     <!-- ROW 3 — SISROC + Levilo + CoreRock -->
     <div class="wk-row">
       <!-- SISROC -->
-      <div class="wi wi-med has-video">
+      <div class="wi wi-med has-video"
+           data-modal-extra="Sistema de catalogação e caracterização de rochas reservatório desenvolvido na PETREC. Gerencia o fluxo completo de laboratório: entrada de amostras, ensaios de plugues, descrição de lâminas petrográficas e registro de testemunhos. Desenvolvido para geólogos em campo e laboratório, com atenção especial à velocidade de entrada de dados em condições adversas.">
         <div class="wi-bg"></div>
         <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="sisroc-poster.jpg">
           <source src="sisroc-loop.mp4" type="video/mp4">
@@ -887,10 +937,12 @@
           <h3 class="wi-name">SISROC</h3>
           <p class="wi-client" data-i18n="wk_sisroc_c">UX/UI design para sistema de catalogação e caracterização de rochas reservatório — ensaios de plugues, lâminas petrográficas e testemunhos</p>
         </div>
+        <span class="wi-click-hint"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> ver projeto</span>
       </div>
 
       <!-- Levilo -->
-      <div class="wi wi-med">
+      <div class="wi wi-med"
+           data-modal-extra="App de cardápio digital e gestão de pedidos para restaurantes e franquias. O design focou em fluxo de pedido rápido, navegação intuitiva para clientes finais e painel de gestão para operadores — com suporte a variações de produto, grupos de adicionais e impressão de comanda.">
         <div class="wi-bg"></div>
         <img src="levilo-cover.jpg"
              alt="Levilo — App de pedidos para restaurantes"
@@ -901,10 +953,12 @@
           <h3 class="wi-name">Levilo</h3>
           <p class="wi-client" data-i18n="wk_levilo_c">App de cardápio digital e gestão de pedidos para restaurantes e franquias</p>
         </div>
+        <span class="wi-click-hint"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> ver projeto</span>
       </div>
 
       <!-- CoreRock — sobe para cá -->
-      <div class="wi wi-med">
+      <div class="wi wi-med"
+           data-modal-extra="Identidade visual completa para startup de tecnologia mineral. O projeto entregou logo, sistema de cores, tipografia, iconografia e brandbook — com linguagem que equilibra precisão técnica (mineralogia) e modernidade tecnológica (deep tech). Aplicada em materiais digitais, apresentações e comunicação institucional.">
         <div class="wi-bg"></div>
         <img src="corerock-cover.jpg"
              alt="CoreRock — Identidade Visual"
@@ -915,13 +969,15 @@
           <h3 class="wi-name">CoreRock</h3>
           <p class="wi-client" data-i18n="wk_corerock_c">Identidade visual completa para startup de tecnologia mineral — logo, sistema de cores e brandbook</p>
         </div>
+        <span class="wi-click-hint"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> ver projeto</span>
       </div>
     </div>
 
     <!-- ROW 4 -->
     <div class="wk-row-2">
       <!-- LithoLib -->
-      <div class="wi wi-sm has-video">
+      <div class="wi wi-sm has-video"
+           data-modal-extra="Biblioteca digital de dados litológicos para catalogação, busca e visualização de perfis de poços, amostras de calha e testemunhos. Desenvolvida na PETREC, centraliza décadas de dados geológicos em formato pesquisável — com filtros por litologia, profundidade, campo e formação.">
         <div class="wi-bg"></div>
         <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="litholib-poster.jpg">
           <source src="litholib-loop.mp4" type="video/mp4">
@@ -931,10 +987,12 @@
           <h3 class="wi-name">LithoLib</h3>
           <p class="wi-client" data-i18n="wk_litho_c">UX/UI design para biblioteca digital de dados litológicos — catalogação, busca e visualização de perfis de poços, rochas e perfis geofísicos</p>
         </div>
+        <span class="wi-click-hint"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> ver projeto</span>
       </div>
 
       <!-- RockLab (último) -->
-      <div class="wi wi-sm has-video">
+      <div class="wi wi-sm has-video"
+           data-modal-extra="Laboratório digital de petrografia para o fluxo completo de análise de amostras de rocha. Desenvolvido na PETREC, organiza desde a entrada de testemunho até a classificação petrográfica final — com registro fotográfico, descrição mineralógica, análise granulométrica e exportação para relatórios técnicos.">
         <div class="wi-bg"></div>
         <video class="wi-video" loop muted playsinline preload="none" data-autoplay poster="rocklab-poster.jpg">
           <source src="rocklab-loop.mp4" type="video/mp4">
@@ -944,6 +1002,7 @@
           <h3 class="wi-name">RockLab</h3>
           <p class="wi-client" data-i18n="wk_rocklab_c">UX/UI design para laboratório digital de petrografia — fluxo de descrição, fotografia e classificação de amostras de rocha e testemunhos</p>
         </div>
+        <span class="wi-click-hint"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> ver projeto</span>
       </div>
 
     </div>
@@ -1104,8 +1163,15 @@
             <a href="https://linkedin.com/in/roblopes21" target="_blank" rel="noopener" class="ct-side-link">linkedin.com/in/roblopes21</a>
           </div>
           <div class="ct-side-block">
-            <p class="ct-side-label" data-i18n="cs_office">Escritório</p>
-            <p class="ct-side-addr" data-i18n="cs_addr">Parque Tecnológico da UFRJ<br/>Ilha do Fundão, Rio de Janeiro — RJ</p>
+            <p class="ct-side-label" data-i18n="cs_office">Escritórios</p>
+            <p class="ct-side-addr" style="margin-bottom:10px;">
+              <span style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-mid);display:block;margin-bottom:2px;">Rio de Janeiro</span>
+              Parque Tecnológico da UFRJ<br/>Ilha do Fundão — RJ
+            </p>
+            <p class="ct-side-addr">
+              <span style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-mid);display:block;margin-bottom:2px;">Niterói</span>
+              Shopping Pendotiba<br/>Niterói — RJ
+            </p>
           </div>
           <div class="ct-guarantee">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--teal-mid)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -1621,6 +1687,89 @@ async function submitForm(e) {
     console.error('Form error:', err);
   }
 }
+
+// ═══ WORK MODAL ════════════════════════════════
+(function() {
+  // --- Modal HTML ---
+  const modal = document.createElement('div');
+  modal.id = 'wkModal';
+  modal.className = 'wk-modal';
+  modal.innerHTML = `
+    <div class="wk-modal-backdrop"></div>
+    <div class="wk-modal-inner">
+      <button class="wk-modal-close" aria-label="Fechar">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="wk-modal-media" id="wkModalMedia"></div>
+      <div class="wk-modal-body">
+        <span class="wk-modal-tag" id="wkModalTag"></span>
+        <h2 class="wk-modal-title" id="wkModalTitle"></h2>
+        <p class="wk-modal-desc" id="wkModalDesc"></p>
+        <p class="wk-modal-extra" id="wkModalExtra"></p>
+        <a href="#contact" class="wk-modal-cta" id="wkModalCta">Falar sobre um projeto similar →</a>
+      </div>
+    </div>`;
+  document.body.appendChild(modal);
+
+  // --- Open / Close ---
+  function openModal(card) {
+    const tag   = card.querySelector('.wi-tag')?.textContent   || '';
+    const title = card.querySelector('.wi-name')?.textContent  || '';
+    const desc  = card.querySelector('.wi-client')?.innerHTML  || '';
+    const extra = card.dataset.modalExtra || '';
+
+    document.getElementById('wkModalTag').textContent   = tag;
+    document.getElementById('wkModalTitle').textContent = title;
+    document.getElementById('wkModalDesc').innerHTML    = desc;
+    document.getElementById('wkModalExtra').textContent = extra;
+    document.getElementById('wkModalExtra').style.display = extra ? 'block' : 'none';
+
+    // Clone media
+    const mediaEl = document.getElementById('wkModalMedia');
+    mediaEl.innerHTML = '';
+    const srcVideo = card.querySelector('.wi-video');
+    const srcImg   = card.querySelector('img:not([style*="display:none"])');
+    if (srcVideo) {
+      const v = document.createElement('video');
+      v.loop = true; v.muted = true; v.playsinline = true; v.autoplay = true;
+      const s = document.createElement('source');
+      s.src  = srcVideo.querySelector('source')?.src || '';
+      s.type = 'video/mp4';
+      v.appendChild(s);
+      v.poster = srcVideo.poster || '';
+      mediaEl.appendChild(v);
+      v.load(); v.play().catch(() => {});
+    } else if (srcImg) {
+      const i = srcImg.cloneNode(true);
+      i.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;';
+      mediaEl.appendChild(i);
+    }
+
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+    // Stop cloned video
+    const v = document.getElementById('wkModalMedia').querySelector('video');
+    if (v) { v.pause(); v.src = ''; }
+  }
+
+  // --- Bind cards ---
+  document.querySelectorAll('.wi').forEach(card => {
+    card.addEventListener('click', () => openModal(card));
+  });
+
+  // --- Close triggers ---
+  modal.querySelector('.wk-modal-close').addEventListener('click', closeModal);
+  modal.querySelector('.wk-modal-backdrop').addEventListener('click', closeModal);
+  modal.querySelector('.wk-modal-cta').addEventListener('click', closeModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+})();
 </script>
 </body>
 </html>
