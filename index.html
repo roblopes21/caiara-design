@@ -1015,15 +1015,21 @@
               <input type="text" class="cf-input" name="company" placeholder="ACME Corp"/>
             </div>
             <div class="cf-field">
-              <label class="cf-label" data-i18n="cf_service">Serviço de interesse</label>
+              <label class="cf-label" data-i18n="cf_phone">Telefone <span style="opacity:.45;font-size:.8em;font-weight:400">(opcional)</span></label>
+              <input type="tel" class="cf-input" name="phone" placeholder="+55 21 99999-0000"/>
+            </div>
+          </div>
+          <div class="cf-row">
+            <div class="cf-field">
+              <label class="cf-label" data-i18n="cf_service">O que você precisa?</label>
               <select class="cf-input cf-select" name="service">
-                <option value="" data-i18n="cf_sel">Selecione...</option>
-                <option value="product-ux" data-i18n="cf_opt1">Product Design &amp; UX</option>
-                <option value="design-system" data-i18n="cf_opt2">Design System</option>
-                <option value="ai-design" data-i18n="cf_opt3">IA &amp; Automação</option>
-                <option value="eprod" data-i18n="cf_opt4">E-Prod / Modelagem Econômica</option>
-                <option value="branding" data-i18n="cf_opt5">Branding &amp; Identidade</option>
-                <option value="outro" data-i18n="cf_opt6">Outro</option>
+                <option value="" data-i18n="cf_sel">Escolha o que melhor descreve seu projeto...</option>
+                <option value="product-ux" data-i18n="cf_opt1">Criar ou melhorar um app / sistema digital</option>
+                <option value="design-system" data-i18n="cf_opt2">Padronizar o visual de todos os meus produtos</option>
+                <option value="ai-design" data-i18n="cf_opt3">Automatizar tarefas com Inteligência Artificial</option>
+                <option value="eprod" data-i18n="cf_opt4">Dashboard de dados e indicadores de negócio</option>
+                <option value="branding" data-i18n="cf_opt5">Logo, marca e identidade visual</option>
+                <option value="outro" data-i18n="cf_opt6">Não sei ainda — quero conversar e entender</option>
               </select>
             </div>
           </div>
@@ -1209,8 +1215,9 @@ const T = {
     hero_cta3:"Agendar uma call",
     cf_name:"Seu nome", cf_email:"Email profissional", cf_company:"Empresa",
     cf_service:"Serviço de interesse", cf_sel:"Selecione...",
-    cf_opt1:"Product Design &amp; UX", cf_opt2:"Design System", cf_opt3:"IA &amp; Automação",
-    cf_opt4:"E-Prod / Modelagem Econômica", cf_opt5:"Branding &amp; Identidade", cf_opt6:"Outro",
+    cf_phone:"Telefone", cf_sel:"Escolha o que melhor descreve seu projeto...", cf_service:"O que você precisa?",
+    cf_opt1:"Criar ou melhorar um app / sistema digital", cf_opt2:"Padronizar o visual de todos os meus produtos", cf_opt3:"Automatizar tarefas com Inteligência Artificial",
+    cf_opt4:"Dashboard de dados e indicadores de negócio", cf_opt5:"Logo, marca e identidade visual", cf_opt6:"Não sei ainda — quero conversar e entender",
     cf_msg:"Conta sobre seu projeto", cf_send:"Enviar mensagem →",
     cf_privacy:"Sem spam. Retorno em até 24h.",
     cf_thanks:"Mensagem enviada! Rob vai te responder em breve.",
@@ -1267,9 +1274,9 @@ const T = {
     ft_copy:"© 2026 Caiara. All rights reserved.", ft_contact:"Contact", ft_privacy:"Privacy", ft_h_contact:"Contact", ft_h_office:"Office", ft_h_services:"Services",
     hero_cta3:"Schedule a call",
     cf_name:"Your name", cf_email:"Work email", cf_company:"Company",
-    cf_service:"Service of interest", cf_sel:"Select...",
-    cf_opt1:"Product Design &amp; UX", cf_opt2:"Design System", cf_opt3:"IA &amp; Automação",
-    cf_opt4:"E-Prod / Economic Modeling", cf_opt5:"Branding &amp; Identity", cf_opt6:"Other",
+    cf_phone:"Phone", cf_service:"What do you need?", cf_sel:"Choose what best describes your project...",
+    cf_opt1:"Create or improve an app / digital system", cf_opt2:"Standardize the visual identity across all products", cf_opt3:"Automate tasks with Artificial Intelligence",
+    cf_opt4:"Data dashboard and business indicators", cf_opt5:"Logo, brand and visual identity", cf_opt6:"Not sure yet — I'd like to talk and understand",
     cf_msg:"Tell us about your project", cf_send:"Send message →",
     cf_privacy:"No spam. We reply within 24h.",
     cf_thanks:"Message sent! Rob will get back to you soon.",
@@ -1326,9 +1333,9 @@ const T = {
     ft_copy:"© 2026 Caiara. Todos los derechos reservados.", ft_contact:"Contacto", ft_privacy:"Privacidad", ft_h_contact:"Contacto", ft_h_office:"Oficina", ft_h_services:"Servicios",
     hero_cta3:"Agendar una llamada",
     cf_name:"Tu nombre", cf_email:"Email profesional", cf_company:"Empresa",
-    cf_service:"Servicio de interés", cf_sel:"Selecciona...",
-    cf_opt1:"Product Design &amp; UX", cf_opt2:"Design System", cf_opt3:"IA &amp; Automação",
-    cf_opt4:"E-Prod / Modelado Económico", cf_opt5:"Branding e Identidad", cf_opt6:"Otro",
+    cf_phone:"Teléfono", cf_service:"¿Qué necesitas?", cf_sel:"Elige lo que mejor describe tu proyecto...",
+    cf_opt1:"Crear o mejorar una app / sistema digital", cf_opt2:"Estandarizar la identidad visual de todos mis productos", cf_opt3:"Automatizar tareas con Inteligencia Artificial",
+    cf_opt4:"Dashboard de datos e indicadores de negocio", cf_opt5:"Logo, marca e identidad visual", cf_opt6:"No sé aún — quiero conversar y entender",
     cf_msg:"Cuéntanos sobre tu proyecto", cf_send:"Enviar mensaje →",
     cf_privacy:"Sin spam. Respuesta en 24h.",
     cf_thanks:"¡Mensaje enviado! Rob te responderá pronto.",
