@@ -535,6 +535,8 @@
       nav{padding:14px 18px}
       .nav-cta{display:none}
       .nav-logo{height:38px}
+      .sv-grid,.sv-grid-bot{grid-template-columns:1fr}
+      .sv-item{padding:32px 24px}
       .wk-featured{grid-template-columns:1fr}
       .wk-row{grid-template-columns:1fr}
       .wk-row-2{grid-template-columns:1fr}
@@ -781,26 +783,42 @@
       <div class="wk-ctx-icon">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
       </div>
-      <p data-i18n="wk_ctx">Os projetos abaixo foram desenvolvidos por Rob Lopes como <strong>Head of Design na PETREC</strong>. Os clientes (ANP, SGB/CPRM e outros) são clientes da PETREC — Rob liderou a concepção e entrega de design como parte do time interno da empresa.</p>
+      <p data-i18n="wk_ctx">Os dois primeiros projetos foram criados pela <strong>Caiara</strong>. Os demais foram desenvolvidos por Rob Lopes como <strong>Head of Design na PETREC</strong> — liderando concepção e entrega como parte do time interno da empresa.</p>
     </div>
 
-    <!-- FEATURED ROW -->
+    <!-- FEATURED ROW — Produtos Caiara -->
     <div class="wk-featured">
-      <!-- 1 - FisioRelatório (FEATURED LARGE) -->
+      <!-- 1 - Creative Hub (Caiara) -->
+      <div class="wi wi-tall has-video">
+        <div class="wi-bg"></div>
+        <video class="wi-video" autoplay loop muted playsinline preload="auto" poster="petrec-hub-poster.jpg">
+          <source src="petrec-hub-loop.mp4" type="video/mp4">
+        </video>
+        <div class="wi-overlay">
+          <span class="wi-tag">Design Ops · Caiara · SaaS</span>
+          <h3 class="wi-name">Creative Hub</h3>
+          <p class="wi-client" data-i18n="wk_hub_c">Sistema de gestão de marketing e design criado pela Caiara — IA para textos de social media, gestão de conteúdo e integração com LinkedIn e Instagram</p>
+        </div>
+      </div>
+
+      <!-- 2 - FisioRelatório (Caiara) -->
       <div class="wi wi-tall has-video">
         <div class="wi-bg"></div>
         <video class="wi-video" autoplay loop muted playsinline preload="auto" poster="fisiorelatorio-poster.jpg">
           <source src="fisiorelatorio-loop.mp4" type="video/mp4">
         </video>
         <div class="wi-overlay">
-          <span class="wi-tag">UX/UI · PETREC · HealthTech</span>
+          <span class="wi-tag">UX/UI · Caiara · HealthTech</span>
           <h3 class="wi-name">FisioRelatório</h3>
-          <p class="wi-client" data-i18n="wk_fisio_c">Plataforma de laudos e relatórios clínicos para fisioterapeutas e clínicas de reabilitação</p>
+          <p class="wi-client" data-i18n="wk_fisio_c">Plataforma para fisioterapeutas desenvolvida pela Caiara — acelera 40% a criação de laudos com IA e supervisão humana, validada em clínica</p>
         </div>
       </div>
+    </div>
 
-      <!-- 2 - E-Prod -->
-      <div class="wi wi-tall has-video">
+    <!-- ROW 2 — E-Prod + GeoMaps + HealthScan -->
+    <div class="wk-row">
+      <!-- E-Prod -->
+      <div class="wi wi-med has-video">
         <div class="wi-bg"></div>
         <video class="wi-video" autoplay loop muted playsinline preload="auto" poster="eprod-poster.jpg">
           <source src="hero-loop-web.mp4" type="video/mp4">
@@ -820,11 +838,8 @@
           <p class="wi-client" data-i18n="wk_eprod_c">UX/UI design para dashboard de monitoramento de produção de poços em tempo real — volumes, pressões, BSW e alertas para equipes de campo</p>
         </div>
       </div>
-    </div>
 
-    <!-- ROW 2 — GeoMaps (3º) + HealthScan + SISROC -->
-    <div class="wk-row">
-      <!-- 3 - GeoMaps (sobe para cá) -->
+      <!-- GeoMaps -->
       <div class="wi wi-med has-video">
         <div class="wi-bg"></div>
         <video class="wi-video" autoplay loop muted playsinline preload="auto" poster="geomaps-poster.jpg">
@@ -849,8 +864,11 @@
           <p class="wi-client" data-i18n="wk_health_c">UX/UI design para plataforma de IA em radiologia — análise automatizada de radiografias e tomografias com detecção e quantificação de achados</p>
         </div>
       </div>
+    </div>
 
-      <!-- 4 - SISROC -->
+    <!-- ROW 3 — SISROC + Levilo + CoreRock -->
+    <div class="wk-row">
+      <!-- SISROC -->
       <div class="wi wi-med has-video">
         <div class="wi-bg"></div>
         <video class="wi-video" autoplay loop muted playsinline preload="auto" poster="sisroc-poster.jpg">
@@ -863,24 +881,7 @@
         </div>
       </div>
 
-    </div>
-
-    <!-- ROW 3 — Branding & Apps -->
-    <div class="wk-row">
-      <!-- PETREC Creative Hub — maior, com vídeo -->
-      <div class="wi wi-med has-video">
-        <div class="wi-bg"></div>
-        <video class="wi-video" autoplay loop muted playsinline preload="auto" poster="petrec-hub-poster.jpg">
-          <source src="petrec-hub-loop.mp4" type="video/mp4">
-        </video>
-        <div class="wi-overlay">
-          <span class="wi-tag">Design Ops · Branding</span>
-          <h3 class="wi-name">PETREC Creative Hub</h3>
-          <p class="wi-client" data-i18n="wk_hub_c">Plataforma interna de gestão criativa para o setor de marketing e design</p>
-        </div>
-      </div>
-
-      <!-- Levilo — sobe para cá -->
+      <!-- Levilo -->
       <div class="wi wi-med">
         <div class="wi-bg"></div>
         <img src="levilo-cover.jpg"
@@ -1228,11 +1229,11 @@ const T = {
     wk_sisroc_c:"UX/UI design para sistema de catalogação e caracterização de rochas reservatório — ensaios de plugues, lâminas petrográficas e testemunhos",
     wk_rocklab_c:"UX/UI design para laboratório digital de petrografia — fluxo de descrição, fotografia e classificação de amostras de rocha e testemunhos",
     wk_litho_c:"UX/UI design para biblioteca digital de dados litológicos — catalogação, busca e visualização de perfis de poços, rochas e perfis geofísicos",
-    wk_hub_c:"Plataforma interna de gestão criativa para marketing e design",
+    wk_hub_c:"Sistema de gestão de marketing e design criado pela Caiara — IA para textos de social media, gestão de conteúdo e integração com LinkedIn e Instagram",
     wk_anp_c:"Plataformas para a Agência Nacional do Petróleo e Serviço Geológico do Brasil",
     wk_levilo_c:"App de cardápio digital e gestão de pedidos para restaurantes e franquias",
     wk_corerock_c:"Identidade visual completa para startup de tecnologia mineral — logo, sistema de cores e brandbook",
-    wk_fisio_c:"Plataforma de laudos e relatórios clínicos para fisioterapeutas e clínicas de reabilitação",
+    wk_fisio_c:"Plataforma para fisioterapeutas desenvolvida pela Caiara — acelera 40% a criação de laudos com IA e supervisão humana, validada em clínica",
     cr_label:"Confiado por", cr_intl:"+ Projetos Internacionais",
     vis_label:"Interface & Craft", vis_h2:"Design que o usuário entende. Na primeira vez.",
     vis_p1:"Cada tela é uma decisão estratégica. Interfaces bem projetadas reduzem treinamento, diminuem erros operacionais e aumentam adoção — em setores onde cada minuto tem custo.",
@@ -1281,18 +1282,18 @@ const T = {
     sv4_f2:"Integrated CAPEX, OPEX and revenue control per asset",
     sv4_f3:"Strategic dashboard for attracting future investments",
     sv5_t:"Branding & Identity", sv5_d:"A great product nobody remembers is a lost product. We create the identity that makes your company unforgettable — logo, colors, language and everything that faces the world, across every channel.",
-    wk_title:"Selected", wk_title2:"work", wk_all:"View all →", wk_ctx:"The projects below were developed by Rob Lopes as <strong>Head of Design at PETREC</strong>. The clients (ANP, SGB/CPRM and others) are PETREC's clients — Rob led the design conception and delivery as part of the company's internal team.",
+    wk_title:"Selected", wk_title2:"work", wk_all:"View all →", wk_ctx:"The first two projects were created by <strong>Caiara</strong>. The rest were developed by Rob Lopes as <strong>Head of Design at PETREC</strong> — leading design conception and delivery as part of the company's internal team.",
     wk_geomaps_c:"Interactive geological mapping platform — geospatial visualization of seismic data, well locations and reservoir structures in the field",
     wk_eprod_c:"Real-time well production monitoring dashboard — volumes, pressures, BSW and operational alerts for field teams and management",
     wk_health_c:"AI platform for automated medical image analysis — detects and quantifies findings in X-rays and CT scans, accelerating reporting for hospitals and clinics",
     wk_sisroc_c:"Integrated reservoir rock cataloging and characterization system — centralizes plug tests, petrographic slides and core data by well",
     wk_rocklab_c:"Digital petrographic analysis lab — complete workflow for description, photography and classification of rock samples and drill cores with full traceability",
     wk_litho_c:"Collaborative digital lithological library — cataloging, advanced search and visualization of well profiles, rock descriptions and geophysical logs by field",
-    wk_hub_c:"Internal creative project management platform for marketing and design",
+    wk_hub_c:"Marketing and design management system built by Caiara — AI for social media copy, content management and LinkedIn/Instagram integration",
     wk_anp_c:"Digital platforms for Brazil's National Petroleum Agency and Geological Survey",
     wk_levilo_c:"Digital menu and order management app for restaurants and franchises",
     wk_corerock_c:"Full visual identity for a mineral technology startup — logo, color system and brandbook",
-    wk_fisio_c:"Clinical reports and documentation platform for physiotherapists and rehabilitation clinics",
+    wk_fisio_c:"Physiotherapy platform built by Caiara — accelerates report creation by 40% with AI and human supervision, validated in clinical settings",
     cr_label:"Trusted by", cr_intl:"+ International Projects",
     vis_label:"Interface & Craft", vis_h2:"Design users understand. The first time.",
     vis_p1:"Every screen is a strategic decision. Well-designed interfaces reduce training, minimize operational errors, and drive adoption — in industries where every minute has a cost.",
@@ -1340,18 +1341,18 @@ const T = {
     sv4_f2:"Control integrado de CAPEX, OPEX e ingresos por activo",
     sv4_f3:"Dashboard estratégico para atraer inversiones futuras",
     sv5_t:"Branding e Identidad", sv5_d:"Un buen producto que nadie recuerda es un producto perdido. Creamos la identidad que hace tu empresa inolvidable — logo, colores, lenguaje y todo lo que enfrenta al mundo, en cada canal.",
-    wk_title:"Trabajos", wk_title2:"seleccionados", wk_all:"Ver todos →", wk_ctx:"Los proyectos a continuación fueron desarrollados por Rob Lopes como <strong>Head of Design en PETREC</strong>. Los clientes (ANP, SGB/CPRM y otros) son clientes de PETREC — Rob lideró la concepción y entrega del diseño como parte del equipo interno de la empresa.",
+    wk_title:"Trabajos", wk_title2:"seleccionados", wk_all:"Ver todos →", wk_ctx:"Los primeros dos proyectos fueron creados por <strong>Caiara</strong>. Los demás fueron desarrollados por Rob Lopes como <strong>Head of Design en PETREC</strong> — liderando la concepción y entrega del diseño como parte del equipo interno.",
     wk_geomaps_c:"Plataforma de mapeo geológico interactivo — visualización geoespacial de datos sísmicos, ubicación de pozos y estructuras de yacimiento en campo",
     wk_eprod_c:"Dashboard de monitoreo en tiempo real de producción de pozos — volúmenes, presiones, BSW y alertas operacionales para equipos de campo y gestión",
     wk_health_c:"Plataforma de IA para análisis automatizado de imágenes médicas — detecta y cuantifica hallazgos en radiografías y tomografías, acelerando el informe para hospitales y clínicas",
     wk_sisroc_c:"Sistema integrado de catalogación y caracterización de rocas reservorio — centraliza ensayos de tapones, láminas petrográficas y datos de testigos por pozo",
     wk_rocklab_c:"Laboratorio digital de análisis petrográfico — flujo completo de descripción, fotografía y clasificación de muestras de roca y testigos de sondeo con trazabilidad total",
     wk_litho_c:"Biblioteca digital colaborativa de datos litológicos — catalogación, búsqueda avanzada y visualización de perfiles de pozos, descripciones de rocas y perfiles geofísicos por campo",
-    wk_hub_c:"Plataforma interna de gestión creativa para marketing y diseño",
+    wk_hub_c:"Sistema de gestión de marketing y diseño creado por Caiara — IA para textos de redes sociales, gestión de contenido e integración con LinkedIn e Instagram",
     wk_anp_c:"Plataformas para la Agencia Nacional del Petróleo y Servicio Geológico de Brasil",
     wk_levilo_c:"App de menú digital y gestión de pedidos para restaurantes y franquicias",
     wk_corerock_c:"Identidad visual completa para startup de tecnología mineral — logo, sistema de colores y brandbook",
-    wk_fisio_c:"Plataforma de informes y documentación clínica para fisioterapeutas y clínicas de rehabilitación",
+    wk_fisio_c:"Plataforma para fisioterapeutas creada por Caiara — acelera 40% la creación de informes con IA y supervisión humana, validada en clínica",
     cr_label:"Con la confianza de", cr_intl:"+ Proyectos Internacionales",
     vis_label:"Interface & Craft", vis_h2:"Diseño que el usuario entiende. A la primera.",
     vis_p1:"Cada pantalla es una decisión estratégica. Las interfaces bien diseñadas reducen el tiempo de formación, minimizan errores operativos e impulsan la adopción — en sectores donde cada minuto tiene un costo.",
