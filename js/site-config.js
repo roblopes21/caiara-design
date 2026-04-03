@@ -6,7 +6,7 @@ window.CAIARA_SITE = {
   origin: 'https://caiara.com.br',
   brand: 'Caiara',
   legalEntity: 'Caiara Design Studio',
-  tagline: 'UX Design, software e IA — Rio de Janeiro e Niterói',
+  tagline: 'UX, software e IA — Brasil · Portugal · bases Rio de Janeiro e Niterói',
   email: 'roblopes2121@gmail.com',
   telE164: '+5521994290105',
   phoneDisplay: '+55 (21) 99429-0105',
