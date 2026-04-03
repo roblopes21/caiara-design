@@ -28,6 +28,7 @@ window.CAIARA_SITE = {
     uxIntent: '/ux-para-sistemas-complexos/',
     sistemasInternos: '/sistemas-internos-e-plataformas-operacionais/',
     softwareIntent: '/software-sob-medida-para-operacoes-complexas/',
+    sites: '/criacao-de-sites-e-landing-pages/',
     iaIntent: '/automacao-ia-para-equipes-e-processos/',
     software: '/desenvolvimento-software-rio-de-janeiro/',
     ia: '/automacao-ia-rio-de-janeiro/',
