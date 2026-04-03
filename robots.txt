@@ -12,4 +12,17 @@ Allow: /
 User-agent: GPTBot
 Allow: /
 
+# Bing / Copilot e outros crawlers de descoberta
+User-agent: Bingbot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
 Sitemap: https://caiara.com.br/sitemap.xml
