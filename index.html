@@ -465,6 +465,32 @@
     #institucional .inst-p { font-size:15px;font-weight:300;color:var(--muted);line-height:1.85;margin-bottom:16px;max-width:720px; }
     #institucional .inst-list { list-style:none;margin-top:20px;max-width:720px; }
     #institucional .inst-list li { padding:14px 0 14px 20px;border-left:2px solid var(--teal-mid);font-size:14px;color:rgba(241,242,238,.78);line-height:1.65;margin-bottom:8px; }
+    /* Links institucionais: coerentes com o tema escuro (sem azul/roxo do browser) */
+    #institucional .inst-list a {
+      color: rgba(241,242,238,.9);
+      font-weight:inherit;
+      text-decoration: underline;
+      text-decoration-color: rgba(241,242,238,.28);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+      transition: color .2s ease, text-decoration-color .2s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    #institucional .inst-list a:visited {
+      color: rgba(241,242,238,.9);
+      text-decoration-color: rgba(241,242,238,.28);
+    }
+    #institucional .inst-list a:hover {
+      color: var(--light);
+      text-decoration-color: var(--teal-lt);
+    }
+    #institucional .inst-list a:focus-visible {
+      color: var(--light);
+      text-decoration-color: var(--teal-lt);
+      outline: 1px solid rgba(42,158,181,.5);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
     #problemas { padding:100px 0;border-top:1px solid var(--border); }
     .prob-intro { max-width:640px;font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:36px; }
     .prob-grid { display:grid;grid-template-columns:repeat(2,1fr);gap:20px 28px;max-width:960px; }
@@ -813,7 +839,7 @@
     <h2 class="sec-label" id="inst-h" data-i18n="inst_label">Quem é a Caiara</h2>
     <p class="inst-p" data-i18n="inst_p1">A <strong>Caiara</strong> é uma <strong>empresa de UX, software e inteligência artificial aplicada</strong> orientada a <strong>sistemas complexos</strong>: produtos B2B, <strong>operações</strong> com alta densidade de dados, <strong>integração de informação</strong>, <strong>dashboards operacionais</strong>, ambientes <strong>técnicos, regulados e institucionais</strong>. Escritórios no <strong>Rio de Janeiro</strong> (Parque Tecnológico da UFRJ) e <strong>Niterói</strong> (Shopping Pendotiba); <strong>atendimento em todo o Brasil</strong> e em <strong>Portugal</strong> em modelo remoto, com página dedicada em português europeu.</p>
     <p class="inst-p" data-i18n="inst_p2"><strong>O que fazemos:</strong> descoberta e direção de produto, <strong>experiência do usuário</strong>, especificação executável, <strong>software sob medida</strong> e <strong>automação com IA</strong> quando o risco e a governança permitem. <strong>Para quem:</strong> equipes que precisam de clareza operacional, adoção real e disciplina de entrega — não de slides genéricos.</p>
-    <p class="inst-p" data-i18n="inst_p3"><strong>Autoria nos trabalhos:</strong> os <strong>dois primeiros cases</strong> na seção Trabalhos foram <strong>criados pela Caiara</strong>. Os <strong>restantes</strong> exibem o repertório de <strong>Rob</strong> em <strong>Product Design</strong> em contexto corporativo — <strong>Rob liderou a frente de design do produto</strong> (fluxos, interface, evolução da experiência) integrado às equipes que desenvolveram cada plataforma.</p>
+    <p class="inst-p" data-i18n="inst_p3"><strong>Autoria nos trabalhos:</strong> os <strong>dois primeiros cases</strong> na seção Trabalhos foram <strong>criados pela Caiara</strong>. Os <strong>demais projetos foram desenvolvidos pela PETREC</strong>, com <strong>Rob</strong> como <strong>líder de design</strong> — direção de design do produto, fluxos, interface e evolução da experiência, em conjunto com as equipes responsáveis por cada plataforma.</p>
     <ul class="inst-list">
       <li data-i18n="inst_li1"><a href="/brasil/">Atendimento Brasil</a> · <a href="/portugal/">Portugal (pt-PT)</a> · <a href="/diagnostico-de-produto-ou-operacao/">Diagnóstico inicial</a></li>
       <li data-i18n="inst_li2"><a href="/ux-para-sistemas-complexos/">UX para sistemas complexos</a> · <a href="/sistemas-internos-e-plataformas-operacionais/">Sistemas internos</a> · <a href="/software-sob-medida-para-operacoes-complexas/">Software sob medida</a> · <a href="/automacao-ia-para-equipes-e-processos/">Automação com IA</a></li>
@@ -876,7 +902,7 @@
       <div class="wk-ctx-icon">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
       </div>
-      <p data-i18n="wk_ctx">Os dois primeiros cases foram criados pela <strong>Caiara</strong>. Os demais mostram a atuação de <strong>Rob</strong> em Product Design em contexto corporativo: foi responsável pela <strong>direção de design do produto</strong> — fluxos, interface e evolução da experiência — integrado ao time que desenvolveu cada plataforma.</p>
+      <p data-i18n="wk_ctx">Os dois primeiros cases são da <strong>Caiara</strong>. Os demais são <strong>produtos da PETREC</strong>, com <strong>Rob</strong> à frente do design — direção de produto, fluxos, interface e evolução da experiência, junto às equipes de cada plataforma.</p>
       <p class="wk-ctx-more">Hubs: <a href="/ux-para-sistemas-complexos/">UX sistemas complexos</a> · <a href="/sistemas-internos-e-plataformas-operacionais/">Sistemas internos</a> · <a href="/software-sob-medida-para-operacoes-complexas/">Software operações</a> · <a href="/automacao-ia-para-equipes-e-processos/">IA processos</a> · <a href="/governo-digital-e-sistemas-publicos/">Governo digital</a> · <a href="/brasil/">Brasil</a> · <a href="/portugal/">Portugal</a> · <a href="/diagnostico-de-produto-ou-operacao/">Diagnóstico</a> · <a href="/contato/">Contato</a></p>
     </div>
 
@@ -1450,7 +1476,7 @@ const T = {
     sv4_f3:"Dashboard estratégico para atração de investimentos futuros",
     sv5_t:"Branding & Identidade", sv5_d:"Produto bom que ninguém lembra é produto perdido. Criamos a identidade que faz sua empresa ser reconhecida — logo, cores, linguagem e tudo que aparece para o mundo, em todos os canais.",
     sv6_t:"Software & Soluções de IA", sv6_d:"Desenvolvemos software do zero — web apps, plataformas SaaS e soluções com Inteligência Artificial integrada. Da arquitetura ao deploy, entregamos sistemas que funcionam, escalam e fazem sentido para quem usa.",
-    wk_heading:'Trabalhos<br/><em style="font-style:italic;color:var(--teal-mid)">selecionados</em>', wk_all:"Conversar sobre um case →", wk_ctx:"Os dois primeiros cases foram criados pela <strong>Caiara</strong>. Os demais mostram a atuação de <strong>Rob</strong> em Product Design em contexto corporativo: foi responsável pela <strong>direção de design do produto</strong> — fluxos, interface e evolução da experiência — integrado ao time que desenvolveu cada plataforma.",
+    wk_heading:'Trabalhos<br/><em style="font-style:italic;color:var(--teal-mid)">selecionados</em>', wk_all:"Conversar sobre um case →", wk_ctx:"Os dois primeiros cases são da <strong>Caiara</strong>. Os demais são <strong>produtos da PETREC</strong>, com <strong>Rob</strong> à frente do design — direção de produto, fluxos, interface e evolução da experiência, junto às equipes de cada plataforma.",
     wk_geomaps_c:"Plataforma geoespacial de E&P — visualização de bacias sedimentares, blocos de exploração, poços e estruturas sísmicas para ANP e operadoras",
     wk_eprod_c:"Modelagem econômica de ativos de O&G — VPL, TIR, fluxo de caixa e simulação de cenários para tomada de decisão em E&P",
     wk_health_c:"UX/UI design para plataforma de IA em radiologia — análise automatizada de radiografias e tomografias com detecção e quantificação de achados",
@@ -1513,7 +1539,7 @@ const T = {
     inst_label:"Quem é a Caiara",
     inst_p1:"A <strong>Caiara</strong> é uma <strong>empresa de UX, software e inteligência artificial aplicada</strong> orientada a <strong>sistemas complexos</strong>: produtos B2B, <strong>operações</strong> com alta densidade de dados, <strong>integração de informação</strong>, <strong>dashboards operacionais</strong>, ambientes <strong>técnicos, regulados e institucionais</strong>. Escritórios no <strong>Rio de Janeiro</strong> (Parque Tecnológico da UFRJ) e <strong>Niterói</strong> (Shopping Pendotiba); <strong>atendimento em todo o Brasil</strong> e em <strong>Portugal</strong> em modelo remoto, com página dedicada em português europeu.",
     inst_p2:"<strong>O que fazemos:</strong> descoberta e direção de produto, <strong>experiência do usuário</strong>, especificação executável, <strong>software sob medida</strong> e <strong>automação com IA</strong> quando o risco e a governança permitem. <strong>Para quem:</strong> equipes que precisam de clareza operacional, adoção real e disciplina de entrega — não de slides genéricos.",
-    inst_p3:"<strong>Autoria nos trabalhos:</strong> os <strong>dois primeiros cases</strong> na seção Trabalhos foram <strong>criados pela Caiara</strong>. Os <strong>restantes</strong> exibem o repertório de <strong>Rob</strong> em <strong>Product Design</strong> em contexto corporativo — <strong>Rob liderou a frente de design do produto</strong> (fluxos, interface, evolução da experiência) integrado às equipes que desenvolveram cada plataforma.",
+    inst_p3:"<strong>Autoria nos trabalhos:</strong> os <strong>dois primeiros cases</strong> na seção Trabalhos foram <strong>criados pela Caiara</strong>. Os <strong>demais projetos foram desenvolvidos pela PETREC</strong>, com <strong>Rob</strong> como <strong>líder de design</strong> — direção de design do produto, fluxos, interface e evolução da experiência, em conjunto com as equipes responsáveis por cada plataforma.",
     inst_li1:"<a href=\"/brasil/\">Atendimento Brasil</a> · <a href=\"/portugal/\">Portugal (pt-PT)</a> · <a href=\"/diagnostico-de-produto-ou-operacao/\">Diagnóstico inicial</a>",
     inst_li2:"<a href=\"/ux-para-sistemas-complexos/\">UX para sistemas complexos</a> · <a href=\"/sistemas-internos-e-plataformas-operacionais/\">Sistemas internos</a> · <a href=\"/software-sob-medida-para-operacoes-complexas/\">Software sob medida</a> · <a href=\"/automacao-ia-para-equipes-e-processos/\">Automação com IA</a>",
     prob_label:"Problemas que ajudamos a resolver",
@@ -1561,7 +1587,7 @@ const T = {
     sv4_f3:"Strategic dashboard for attracting future investments",
     sv5_t:"Branding & Identity", sv5_d:"A great product nobody remembers is a lost product. We create the identity that makes your company unforgettable — logo, colors, language and everything that faces the world, across every channel.",
     sv6_t:"Software & AI Solutions", sv6_d:"We build software from scratch — web apps, SaaS platforms and solutions with integrated Artificial Intelligence. From architecture to deployment, we deliver systems that work, scale and make sense to the people who use them.",
-    wk_heading:'Selected<br/><em style="font-style:italic;color:var(--teal-mid)">work</em>', wk_all:"Discuss a project →", wk_ctx:"The first two cases were built by <strong>Caiara</strong>. The others reflect <strong>Rob</strong> in Product Design on the corporate side — <strong>product design direction</strong> (flows, interface, how the experience evolved) — alongside the team that shipped each platform.",
+    wk_heading:'Selected<br/><em style="font-style:italic;color:var(--teal-mid)">work</em>', wk_all:"Discuss a project →", wk_ctx:"The first two cases are <strong>Caiara</strong>. The rest are <strong>PETREC products</strong>, with <strong>Rob</strong> leading design — product direction, flows, interface and experience evolution, alongside each platform's teams.",
     wk_geomaps_c:"E&P geospatial platform — visualization of sedimentary basins, exploration blocks, wells and seismic structures for ANP and operators",
     wk_eprod_c:"Economic modeling of O&G assets — NPV, IRR, cash flow and scenario simulation for E&P investment decisions",
     wk_health_c:"AI platform for automated medical image analysis — detects and quantifies findings in X-rays and CT scans, accelerating reporting for hospitals and clinics",
@@ -1624,7 +1650,7 @@ const T = {
     inst_label:"Who Caiara is",
     inst_p1:"<strong>Caiara</strong> is a <strong>UX, software and applied AI</strong> company focused on <strong>complex systems</strong>: B2B products, <strong>data-heavy operations</strong>, <strong>information integration</strong>, <strong>operational dashboards</strong>, and <strong>technical, regulated and institutional</strong> environments. Offices in <strong>Rio de Janeiro</strong> (UFRJ Tech Park) and <strong>Niterói</strong> (Shopping Pendotiba); <strong>nationwide Brazil</strong> and <strong>Portugal</strong> in a remote model, with a dedicated European Portuguese page.",
     inst_p2:"<strong>What we do:</strong> discovery and product direction, <strong>user experience</strong>, build-ready specs, <strong>custom software</strong> and <strong>AI automation</strong> when risk and governance allow. <strong>For whom:</strong> teams that need operational clarity, real adoption and delivery discipline — not generic slide decks.",
-    inst_p3:"<strong>Work authorship:</strong> the <strong>first two cases</strong> in Work were <strong>built by Caiara</strong>. The <strong>others</strong> reflect <strong>Rob</strong>'s <strong>Product Design</strong> track in a corporate context — <strong>Rob led the product design workstream</strong> (flows, interface, experience evolution) alongside the teams that shipped each platform.",
+    inst_p3:"<strong>Work authorship:</strong> the <strong>first two cases</strong> in Work were <strong>built by Caiara</strong>. The <strong>other projects were developed by PETREC</strong>, with <strong>Rob</strong> as <strong>design lead</strong> — product design direction, flows, interface and experience evolution, alongside the teams responsible for each platform.",
     inst_li1:"<a href=\"/brasil/\">Brazil coverage</a> · <a href=\"/portugal/\">Portugal (pt-PT)</a> · <a href=\"/diagnostico-de-produto-ou-operacao/\">Initial diagnostic</a>",
     inst_li2:"<a href=\"/ux-para-sistemas-complexos/\">UX for complex systems</a> · <a href=\"/sistemas-internos-e-plataformas-operacionais/\">Internal systems</a> · <a href=\"/software-sob-medida-para-operacoes-complexas/\">Custom software</a> · <a href=\"/automacao-ia-para-equipes-e-processos/\">AI for teams</a>",
     prob_label:"Problems we help solve",
@@ -1672,7 +1698,7 @@ const T = {
     sv4_f3:"Dashboard estratégico para atraer inversiones futuras",
     sv5_t:"Branding e Identidad", sv5_d:"Un buen producto que nadie recuerda es un producto perdido. Creamos la identidad que hace tu empresa inolvidable — logo, colores, lenguaje y todo lo que enfrenta al mundo, en cada canal.",
     sv6_t:"Software y Soluciones de IA", sv6_d:"Desarrollamos software desde cero — web apps, plataformas SaaS y soluciones con Inteligencia Artificial integrada. De la arquitectura al deploy, entregamos sistemas que funcionan, escalan y tienen sentido para quien los usa.",
-    wk_heading:'Trabajos<br/><em style="font-style:italic;color:var(--teal-mid)">seleccionados</em>', wk_all:"Hablar de un caso →", wk_ctx:"Los dos primeros casos fueron creados por <strong>Caiara</strong>. Los demás muestran la actuación de <strong>Rob</strong> en Product Design en contexto corporativo: fue responsable de la <strong>dirección de diseño del producto</strong> — flujos, interfaz y evolución de la experiencia — integrado al equipo que desarrolló cada plataforma.",
+    wk_heading:'Trabajos<br/><em style="font-style:italic;color:var(--teal-mid)">seleccionados</em>', wk_all:"Hablar de un caso →", wk_ctx:"Los dos primeros casos son de <strong>Caiara</strong>. Los demás son <strong>productos de PETREC</strong>, con <strong>Rob</strong> al frente del diseño — dirección de producto, flujos, interfaz y evolución de la experiencia, junto a los equipos de cada plataforma.",
     wk_geomaps_c:"Plataforma geoespacial de E&P — visualización de cuencas sedimentarias, bloques de exploración, pozos y estructuras sísmicas para ANP y operadoras",
     wk_eprod_c:"Modelado económico de activos de O&G — VPN, TIR, flujo de caja y simulación de escenarios para decisiones de inversión en E&P",
     wk_health_c:"Plataforma de IA para análisis automatizado de imágenes médicas — detecta y cuantifica hallazgos en radiografías y tomografías, acelerando el informe para hospitales y clínicas",
@@ -1735,7 +1761,7 @@ const T = {
     inst_label:"Qué es Caiara",
     inst_p1:"<strong>Caiara</strong> es una <strong>empresa de UX, software e inteligencia artificial aplicada</strong> orientada a <strong>sistemas complejos</strong>: productos B2B, <strong>operaciones</strong> con muchos datos, <strong>integración de información</strong>, <strong>dashboards operacionales</strong> y entornos <strong>técnicos, regulados e institucionales</strong>. Oficinas en <strong>Río de Janeiro</strong> (Parque Tecnológico UFRJ) y <strong>Niterói</strong>; <strong>atención en todo Brasil</strong> y en <strong>Portugal</strong> en modelo remoto, con página en portugués europeo.",
     inst_p2:"<strong>Qué hacemos:</strong> descubrimiento y dirección de producto, <strong>experiencia de usuario</strong>, especificación ejecutable, <strong>software a medida</strong> y <strong>automatización con IA</strong> cuando el riesgo y la gobernanza lo permiten. <strong>Para quién:</strong> equipos que necesitan claridad operativa, adopción real y disciplina de entrega.",
-    inst_p3:"<strong>Autoría en los trabajos:</strong> los <strong>dos primeros casos</strong> en Trabajos fueron <strong>creados por Caiara</strong>. Los <strong>demás</strong> muestran el repertorio de <strong>Rob</strong> en <strong>Product Design</strong> en contexto corporativo — <strong>Rob lideró la frente de diseño del producto</strong> (flujos, interfaz, evolución de la experiencia) integrado en los equipos que desarrollaron cada plataforma.",
+    inst_p3:"<strong>Autoría en los trabajos:</strong> los <strong>dos primeros casos</strong> en Trabajos fueron <strong>creados por Caiara</strong>. Los <strong>demás proyectos fueron desarrollados por PETREC</strong>, con <strong>Rob</strong> como <strong>líder de diseño</strong> — dirección de diseño del producto, flujos, interfaz y evolución de la experiencia, junto a los equipos responsables de cada plataforma.",
     inst_li1:"<a href=\"/brasil/\">Brasil</a> · <a href=\"/portugal/\">Portugal (pt-PT)</a> · <a href=\"/diagnostico-de-produto-ou-operacao/\">Diagnóstico inicial</a>",
     inst_li2:"<a href=\"/ux-para-sistemas-complexos/\">UX sistemas complejos</a> · <a href=\"/sistemas-internos-e-plataformas-operacionais/\">Sistemas internos</a> · <a href=\"/software-sob-medida-para-operacoes-complexas/\">Software a medida</a> · <a href=\"/automacao-ia-para-equipes-e-processos/\">IA para equipos</a>",
     prob_label:"Problemas que ayudamos a resolver",
