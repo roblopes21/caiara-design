@@ -25,8 +25,16 @@ window.CAIARA_SITE = {
   ],
   servicePaths: {
     ux: '/ux-design-rio-de-janeiro/',
+    uxIntent: '/ux-para-sistemas-complexos/',
+    sistemasInternos: '/sistemas-internos-e-plataformas-operacionais/',
+    softwareIntent: '/software-sob-medida-para-operacoes-complexas/',
+    iaIntent: '/automacao-ia-para-equipes-e-processos/',
     software: '/desenvolvimento-software-rio-de-janeiro/',
     ia: '/automacao-ia-rio-de-janeiro/',
+    gov: '/governo-digital-e-sistemas-publicos/',
+    diagnostico: '/diagnostico-de-produto-ou-operacao/',
+    brasil: '/brasil/',
+    portugal: '/portugal/',
     contact: '/contato/',
   },
 };
