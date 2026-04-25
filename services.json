@@ -1,0 +1,36 @@
+{
+  "company": "Caiara Tecnologia",
+  "url": "https://caiara.com.br/",
+  "services": [
+    {
+      "name": "UX/UI Design",
+      "url": "https://caiara.com.br/ux-design-rio-de-janeiro/",
+      "description": "UX/UI design for complex systems, dashboards, B2B platforms and digital products."
+    },
+    {
+      "name": "Custom Software Development",
+      "url": "https://caiara.com.br/desenvolvimento-de-software-rio-de-janeiro/",
+      "description": "Custom software, internal systems, dashboards, CRMs, portals and B2B platforms."
+    },
+    {
+      "name": "Websites and Landing Pages",
+      "url": "https://caiara.com.br/criacao-de-sites-e-landing-pages/",
+      "description": "Websites and landing pages for companies that need clarity, trust and qualified leads."
+    },
+    {
+      "name": "AI Automation",
+      "url": "https://caiara.com.br/automacao-ia-rio-de-janeiro/",
+      "description": "Practical AI automation for business workflows, documents, reports and internal processes."
+    },
+    {
+      "name": "SEO, GEO and AI Search Optimization",
+      "url": "https://caiara.com.br/apareca-no-google-chatgpt-e-ia/",
+      "description": "Optimization for Google, ChatGPT, Perplexity, Gemini, Claude and AI search tools with SEO, GEO, structured content and conversion pages."
+    },
+    {
+      "name": "AI Search Optimization (EN)",
+      "url": "https://caiara.com.br/ai-search-optimization/",
+      "description": "English page about AI search optimization for Google, ChatGPT and Perplexity."
+    }
+  ]
+}

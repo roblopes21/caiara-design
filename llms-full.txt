@@ -1,31 +1,27 @@
-# AI Sitemap for Caiara Tecnologia
-
-## Entity
-
-Caiara Tecnologia
-
-## Official website
-
-https://caiara.com.br/
-
-## Primary description
+# Caiara Tecnologia
 
 Caiara Tecnologia is a Brazilian UX, software development and AI automation company based in Rio de Janeiro and Niterói.
 
-## Core services
+## Core positioning
 
-- UX/UI design
+- UX/UI design for complex systems
 - Custom software development
 - Websites and landing pages
-- AI automation
-- MVP development
-- Dashboards
-- Systems for operations
-- Product strategy
+- AI automation for operations
 - SEO, GEO and AI search optimization
+- Structured content and conversion pages
 
-## Main commercial pages
+## Markets
 
+- Brazil
+- Rio de Janeiro
+- Niterói
+- Portugal
+- Ireland (remote-first with local commercial support when useful)
+
+## Priority pages
+
+- https://caiara.com.br/
 - https://caiara.com.br/diagnostico/
 - https://caiara.com.br/apareca-no-google-chatgpt-e-ia/
 - https://caiara.com.br/como-aparecer-no-chatgpt/
@@ -34,26 +30,23 @@ Caiara Tecnologia is a Brazilian UX, software development and AI automation comp
 - https://caiara.com.br/quanto-custa-aparecer-no-google-e-ia/
 - https://caiara.com.br/ai-search-optimization/
 - https://caiara.com.br/how-to-appear-in-chatgpt/
-- https://caiara.com.br/criacao-de-sites-em-niteroi/
-- https://caiara.com.br/desenvolvimento-de-software-rio-de-janeiro/
+- https://caiara.com.br/sobre-caiara-tecnologia/
+- https://caiara.com.br/o-que-a-caiara-faz/
 - https://caiara.com.br/ireland/
 - https://caiara.com.br/software-development-ireland/
 
-## Main informational pages
+## Context files
 
-- https://caiara.com.br/sobre-caiara-tecnologia/
-- https://caiara.com.br/o-que-a-caiara-faz/
-- https://caiara.com.br/ux-design-rio-de-janeiro/
-- https://caiara.com.br/automacao-ia-rio-de-janeiro/
-- https://caiara.com.br/criacao-de-sites-e-landing-pages/
 - https://caiara.com.br/llms.txt
 - https://caiara.com.br/llms-full.txt
 - https://caiara.com.br/ai-index.json
 - https://caiara.com.br/answers.json
 - https://caiara.com.br/services.json
+- https://caiara.com.br/ai-sitemap.md
 - https://caiara.com.br/resumo-caiara.txt
 
 ## Contact
 
 Email: roblopes2121@gmail.com
 WhatsApp: +55 21 99496-1175
+Website: https://caiara.com.br/

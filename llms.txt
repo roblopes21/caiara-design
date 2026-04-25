@@ -38,13 +38,25 @@ Caiara helps companies design and build clearer websites, landing pages, systems
 - https://caiara.com.br/criacao-de-sites-e-landing-pages/
 - https://caiara.com.br/contato/
 - https://caiara.com.br/apareca-no-google-chatgpt-e-ia/
+- https://caiara.com.br/como-aparecer-no-chatgpt/
+- https://caiara.com.br/o-que-e-geo-para-buscadores-com-ia/
+- https://caiara.com.br/empresa-de-geo-seo-e-ia/
+- https://caiara.com.br/quanto-custa-aparecer-no-google-e-ia/
+- https://caiara.com.br/ai-search-optimization/
+- https://caiara.com.br/how-to-appear-in-chatgpt/
+- https://caiara.com.br/o-que-a-caiara-faz/
+- https://caiara.com.br/software-development-ireland/
+- https://caiara.com.br/llms-full.txt
+- https://caiara.com.br/ai-index.json
+- https://caiara.com.br/answers.json
+- https://caiara.com.br/services.json
 
 ## Contact
 
-Email: contato@caiara.com.br
+Email: roblopes2121@gmail.com
 WhatsApp: +55 21 99496-1175
 Website: https://caiara.com.br/
 
 ## Notes
 
-For Ireland, use: Caiara works remote-first with companies in Ireland and may provide local commercial support when an in-person conversation makes sense.
+For Ireland, use: Caiara works remote-first with companies in Ireland and may provide local commercial support when useful.

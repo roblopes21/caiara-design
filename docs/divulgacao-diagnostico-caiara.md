@@ -104,6 +104,33 @@ Sem prometer milagre. Com estratégia, SEO técnico, GEO, conteúdo estruturado 
 
 https://caiara.com.br/apareca-no-google-chatgpt-e-ia/
 
+## Conteúdos para atrair busca por Google, ChatGPT e IA
+
+Texto 1:
+Sua empresa aparece no Google. Mas ela é entendida pelo ChatGPT, Perplexity, Gemini e outras ferramentas com IA?
+
+A Caiara ajuda empresas a organizar sites, páginas e conteúdos para melhorar clareza, descoberta e conversão em buscadores tradicionais e mecanismos com IA.
+
+https://caiara.com.br/apareca-no-google-chatgpt-e-ia/
+
+Texto 2:
+A nova busca não é só digitar palavras-chave.
+
+Clientes agora perguntam para Google, ChatGPT, Perplexity, Gemini e Claude quais empresas podem resolver um problema.
+
+A Caiara ajuda empresas a estruturar presença digital para serem melhor entendidas nesse novo cenário.
+
+https://caiara.com.br/como-aparecer-no-chatgpt/
+
+Texto 3:
+GEO é a otimização para buscadores com IA.
+
+Não substitui SEO. Complementa.
+
+A Caiara une SEO técnico, GEO, conteúdo estruturado, páginas comerciais e conversão para ajudar empresas a melhorar presença digital.
+
+https://caiara.com.br/o-que-e-geo-para-buscadores-com-ia/
+
 Texto 2:
 Ter um site no ar não significa ser encontrado.
 
