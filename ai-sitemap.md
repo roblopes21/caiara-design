@@ -66,3 +66,7 @@ Caiara Tecnologia is a Brazilian UX, software development and AI automation comp
 
 Email: contato@caiara.com.br
 WhatsApp: +55 21 99496-1175
+
+- https://caiara.com.br/aparecer-no-google-em-niteroi/
+- https://caiara.com.br/landing-page-em-niteroi/
+- https://caiara.com.br/sites-para-empresas-b2b-em-niteroi/
