@@ -70,3 +70,8 @@ WhatsApp: +55 21 99496-1175
 - https://caiara.com.br/aparecer-no-google-em-niteroi/
 - https://caiara.com.br/landing-page-em-niteroi/
 - https://caiara.com.br/sites-para-empresas-b2b-em-niteroi/
+- https://caiara.com.br/sobre-roberto-lopes/
+- https://caiara.com.br/depoimentos/
+- https://caiara.com.br/videos/
+
+External validation focus: public profiles, authority content, and answer-first pages to support trust signals for search engines and AI tools.
