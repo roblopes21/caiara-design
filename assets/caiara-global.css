@@ -1,0 +1,140 @@
+/**
+ * Estilos globais Caiara: FAB WhatsApp + ajustes de links.
+ * Carregado via js/caiara-global.js em todas as páginas que usam o script.
+ */
+:root {
+  --caiara-link: #2a9eb5;
+}
+
+/* Espaço inferior para o FAB não cobrir CTAs */
+body.has-caiara-fab {
+  padding-bottom: 100px;
+}
+
+@media (max-width: 520px) {
+  body.has-caiara-fab {
+    padding-bottom: 88px;
+  }
+}
+
+/* WhatsApp FAB — CSS mínimo (não herdar link azul do navegador) */
+.caiara-whatsapp-fab {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9999;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: auto;
+  max-width: calc(100vw - 32px);
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: var(--brand-primary, #0f766e);
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  line-height: 1;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.caiara-whatsapp-fab:visited,
+.caiara-whatsapp-fab:hover,
+.caiara-whatsapp-fab:focus,
+.caiara-whatsapp-fab:active {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.caiara-whatsapp-fab:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+}
+
+.caiara-whatsapp-fab__icon {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  color: currentColor;
+  flex: 0 0 auto;
+}
+
+.caiara-whatsapp-fab__icon svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.caiara-whatsapp-fab__label {
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .caiara-whatsapp-fab {
+    right: 16px;
+    bottom: 16px;
+    padding: 12px;
+    border-radius: 999px;
+  }
+
+  .caiara-whatsapp-fab__label {
+    display: none;
+  }
+}
+
+/* Links sem classe: evitar azul padrão do user-agent (home e trechos de texto) */
+#main-content a:not([class]),
+#ireland-teaser a:not([class]),
+.inst-list a:not([class]),
+.inst-p a:not([class]),
+.prob-card a:not([class]),
+.diag-list a:not([class]),
+#home-faq a:not([class]),
+.wk-ctx-more a:not([class]),
+.cd-links a:not([class]) {
+  color: var(--caiara-link);
+  text-decoration: underline;
+  text-decoration-color: rgba(42, 158, 181, 0.45);
+  text-underline-offset: 3px;
+}
+
+#main-content a:not([class]):hover,
+#ireland-teaser a:not([class]):hover,
+.inst-list a:not([class]):hover,
+.inst-p a:not([class]):hover,
+.prob-card a:not([class]):hover,
+.diag-list a:not([class]):hover,
+#home-faq a:not([class]):hover,
+.wk-ctx-more a:not([class]):hover,
+.cd-links a:not([class]):hover {
+  color: #f1f2ee;
+  text-decoration-color: rgba(241, 242, 238, 0.55);
+}
+
+/* Páginas landing.css: reforço footer se o agente pintar mailto de azul */
+.ld-footer a:link,
+.ld-footer a:visited {
+  color: rgba(241, 242, 238, 0.45);
+  text-decoration: none;
+}
+
+.ld-footer a:hover {
+  color: #f1f2ee;
+  text-decoration: underline;
+}
+
+/* Botões com href não devem herdar sublinhado de regras de link */
+a.btn-primary,
+a.btn-ghost,
+a.btn-schedule,
+a.ld-btn,
+a.ld-btn-ghost,
+a.ld-nav-cta,
+a.nav-cta,
+a.wk-modal-cta,
+a.va,
+.caiara-whatsapp-fab {
+  text-decoration: none !important;
+}

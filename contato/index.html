@@ -65,7 +65,7 @@
       <li><a href="../automacao-ia-para-equipes-e-processos/">IA</a></li>
       <li><a href="../governo-digital-e-sistemas-publicos/">Gov</a></li>
       <li><a href="../brasil/">Brasil</a></li>
-      <li><a href="../diagnostico-de-produto-ou-operacao/">Diagnóstico</a></li>
+      <li><a href="../diagnostico/">Diagnóstico</a></li>
     </ul>
     <a class="ld-nav-cta" href="mailto:roblopes2121@gmail.com">Email direto</a>
   </nav>
@@ -132,7 +132,7 @@
           <p><strong style="color:rgba(241,242,238,.8)">Niterói</strong><br/>Shopping Pendotiba</p>
           <h3>Canais</h3>
           <p><a href="mailto:roblopes2121@gmail.com">roblopes2121@gmail.com</a><br/>
-          <a href="tel:+5521994290105">+55 (21) 99429-0105</a><br/>
+          <a href="tel:+5521994961175">+55 21 99496-1175</a><br/>
           <a href="https://linkedin.com/in/roblopes21" target="_blank" rel="noopener">LinkedIn</a></p>
           <h3>Agenda</h3>
           <p><a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Call+com+Caiara&amp;add=roblopes2121@gmail.com&amp;details=Conversa+sobre+projeto.+Site:+caiara.com.br&amp;duration=60" target="_blank" rel="noopener">Agendar uma call no Google Calendar</a></p>
@@ -160,7 +160,7 @@
       <a href="../automacao-ia-rio-de-janeiro/">IA — RJ</a>
       <a href="../brasil/">Brasil</a>
       <a href="../portugal/">Portugal</a>
-      <a href="../diagnostico-de-produto-ou-operacao/">Diagnóstico</a>
+      <a href="../diagnostico/">Diagnóstico</a>
     </div>
     <div class="ld-footer-col">
       <h4>Site</h4>
@@ -186,6 +186,7 @@ async function submitContato(e) {
     const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: data });
     const json = await res.json();
     if (json.success) {
+      if (typeof trackEvent === 'function') trackEvent('submit_contact', { form: 'contato' });
       form.reset();
       ok.style.display = 'flex';
       btn.style.display = 'none';
@@ -197,5 +198,6 @@ async function submitContato(e) {
   }
 }
 </script>
+<script defer src="../js/caiara-global.js"></script>
 </body>
 </html>

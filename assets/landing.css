@@ -206,3 +206,52 @@ a:hover { color: var(--light); text-decoration: underline; text-underline-offset
   .ld-nav { flex-wrap: wrap; padding: 12px 20px; }
   .ld-nav-links { width: 100%; justify-content: flex-start; }
 }
+
+/* FAB WhatsApp: estilos em assets/caiara-global.css (injetado por js/caiara-global.js) */
+
+.ld-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .ld-card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .ld-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ld-pill-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 22px;
+  background: rgba(15, 59, 75, 0.2);
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.ld-pill-card strong {
+  display: block;
+  color: rgba(241, 242, 238, 0.92);
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.ld-trust-line {
+  margin-top: 24px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--teal-lt);
+  max-width: 520px;
+  line-height: 1.6;
+}
