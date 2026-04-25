@@ -9,9 +9,10 @@ export const siteUrl = 'https://caiara.com.br';
 export const defaultTitle =
   'Caiara Tecnologia | UX, software, sites e IA para empresas';
 export const defaultDescription =
-  'A Caiara cria sites, sistemas sob medida, UX/UI, dashboards, MVPs e automações com IA para empresas no Rio de Janeiro, Niterói, Brasil e Portugal.';
+  'A Caiara cria sites, sistemas sob medida, UX/UI, dashboards, MVPs e automações com IA para empresas no Rio de Janeiro, Niterói, Brasil, Portugal e Irlanda.';
 export const whatsappNumber = '5521994961175';
 export const whatsappDisplay = '+55 21 99496-1175';
+export const telephoneDisplay = '+55 21 99496-1175';
 export const defaultOgImage = 'https://caiara.com.br/og-image.jpg';
 export const city = 'Niterói';
 export const region = 'Rio de Janeiro';

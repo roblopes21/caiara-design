@@ -85,6 +85,7 @@ body.has-caiara-fab {
 }
 
 /* Links sem classe: evitar azul padrão do user-agent (home e trechos de texto) */
+#geo-ai-summary a:not([class]),
 #main-content a:not([class]),
 #ireland-teaser a:not([class]),
 .inst-list a:not([class]),

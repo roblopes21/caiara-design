@@ -1,8 +1,6 @@
-# Caiara — permitir indexação geral e crawlers de pesquisa com IA relevantes
 User-agent: *
 Allow: /
 
-# OpenAI Search
 User-agent: OAI-SearchBot
 Allow: /
 
@@ -10,19 +8,6 @@ User-agent: ChatGPT-User
 Allow: /
 
 User-agent: GPTBot
-Allow: /
-
-# Bing / Copilot e outros crawlers de descoberta
-User-agent: Bingbot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: anthropic-ai
 Allow: /
 
 Sitemap: https://caiara.com.br/sitemap.xml
