@@ -31,7 +31,7 @@ window.CAIARA_SITE = {
     softwareIntent: '/software-sob-medida-para-operacoes-complexas/',
     sites: '/criacao-de-sites-e-landing-pages/',
     iaIntent: '/automacao-ia-para-equipes-e-processos/',
-    software: '/desenvolvimento-software-rio-de-janeiro/',
+    software: '/desenvolvimento-de-software-rio-de-janeiro/',
     ia: '/automacao-ia-rio-de-janeiro/',
     gov: '/governo-digital-e-sistemas-publicos/',
     diagnostico: '/diagnostico/',
