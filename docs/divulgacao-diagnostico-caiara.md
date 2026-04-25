@@ -77,7 +77,7 @@ Hi, I noticed your company may benefit from a clearer website, better UX or more
 
 Caiara works with UX, custom software, landing pages, MVPs and AI automation for B2B companies.
 
-We work remotely and can support commercial conversations in Ireland when needed.
+We work remote-first, with local commercial support in Ireland when an in-person conversation makes sense.
 
 Would you be open to a short diagnosis call?
 
@@ -87,7 +87,7 @@ Hello, I’m reaching out from Caiara Technology.
 
 We help companies turn manual processes, spreadsheets and unclear digital experiences into better websites, systems, dashboards and automations.
 
-For companies in Ireland, we work remotely and may support in-person commercial conversations when useful.
+For companies in Ireland, we work remote-first, with local commercial support in Ireland when an in-person conversation makes sense.
 
 Can I send you a short overview?
 

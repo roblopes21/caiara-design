@@ -7,7 +7,7 @@ window.CAIARA_SITE = {
   brand: 'Caiara',
   legalEntity: 'Caiara Tecnologia',
   tagline: 'UX, software e IA — Brasil · Portugal · bases Rio de Janeiro e Niterói',
-  email: 'roblopes2121@gmail.com',
+  email: 'contato@caiara.com.br',
   telE164: '+5521994961175',
   phoneDisplay: '+55 21 99496-1175',
   whatsappE164: '5521994961175',

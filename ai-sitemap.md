@@ -24,6 +24,15 @@ Caiara Tecnologia is a Brazilian UX, software development and AI automation comp
 - Product strategy
 - SEO, GEO and AI search optimization
 
+## Audiences
+
+- B2B companies
+- Healthtech teams
+- Geotech teams
+- Govtech teams
+- Oil and gas operations
+- Digital operations leaders
+
 ## Main commercial pages
 
 - https://caiara.com.br/diagnostico/
@@ -55,5 +64,5 @@ Caiara Tecnologia is a Brazilian UX, software development and AI automation comp
 
 ## Contact
 
-Email: roblopes2121@gmail.com
+Email: contato@caiara.com.br
 WhatsApp: +55 21 99496-1175
