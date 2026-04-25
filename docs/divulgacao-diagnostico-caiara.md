@@ -92,3 +92,29 @@ For companies in Ireland, we work remotely and may support in-person commercial 
 Can I send you a short overview?
 
 Ireland page: https://caiara.com.br/ireland/
+
+## Divulgação SEO, GEO e IA
+
+Texto 1:
+Sua empresa aparece bem no Google? E nas novas buscas com IA?
+
+A Caiara ajuda empresas a estruturar sites, páginas e conteúdos para serem melhor entendidos por Google, ChatGPT, Perplexity, Gemini, Claude e outros mecanismos de busca.
+
+Sem prometer milagre. Com estratégia, SEO técnico, GEO, conteúdo estruturado e páginas pensadas para conversão.
+
+https://caiara.com.br/apareca-no-google-chatgpt-e-ia/
+
+Texto 2:
+Ter um site no ar não significa ser encontrado.
+
+A Caiara ajuda empresas a melhorar clareza, SEO, GEO e conversão para aumentar as chances de descoberta no Google e em ferramentas com IA.
+
+Veja como:
+https://caiara.com.br/apareca-no-google-chatgpt-e-ia/
+
+Texto 3:
+Clientes já estão pesquisando de outro jeito: no Google, no ChatGPT, no Perplexity, no Gemini e em assistentes com IA.
+
+A Caiara ajuda empresas a preparar sites, páginas e conteúdos para essa nova forma de busca.
+
+https://caiara.com.br/apareca-no-google-chatgpt-e-ia/

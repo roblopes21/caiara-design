@@ -15,6 +15,7 @@ Caiara helps companies design and build clearer websites, landing pages, interna
 - MVP development
 - Dashboards and internal tools
 - Product strategy and discovery
+- SEO, GEO and AI search optimization
 
 ## Main markets
 
@@ -36,6 +37,7 @@ Caiara helps companies design and build clearer websites, landing pages, interna
 - https://caiara.com.br/automacao-ia-rio-de-janeiro/
 - https://caiara.com.br/criacao-de-sites-e-landing-pages/
 - https://caiara.com.br/contato/
+- https://caiara.com.br/apareca-no-google-chatgpt-e-ia/
 
 ## Contact
 
