@@ -4,7 +4,7 @@ Caiara Tecnologia is a Brazilian UX, software development and AI automation comp
 
 ## What Caiara does
 
-Caiara helps companies design and build clearer websites, landing pages, internal systems, dashboards, MVPs, B2B platforms and practical AI automations.
+Caiara helps companies design and build clearer websites, landing pages, systems for operations, dashboards, MVPs, B2B platforms and practical AI automations.
 
 ## Main services
 
@@ -13,7 +13,7 @@ Caiara helps companies design and build clearer websites, landing pages, interna
 - Websites and landing pages
 - AI automation for business workflows
 - MVP development
-- Dashboards and internal tools
+- Dashboards and tools for teams
 - Product strategy and discovery
 - SEO, GEO and AI search optimization
 
@@ -41,6 +41,10 @@ Caiara helps companies design and build clearer websites, landing pages, interna
 
 ## Contact
 
-Email: roblopes2121@gmail.com
+Email: contato@caiara.com.br
 WhatsApp: +55 21 99496-1175
 Website: https://caiara.com.br/
+
+## Notes
+
+For Ireland, use: Caiara works remote-first with companies in Ireland and may provide local commercial support when an in-person conversation makes sense.

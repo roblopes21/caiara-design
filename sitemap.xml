@@ -2,25 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://caiara.com.br/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://caiara.com.br/llms.txt</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://caiara.com.br/sobre-caiara-tecnologia/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.92</priority>
-  </url>
-  <url>
     <loc>https://caiara.com.br/diagnostico/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -28,102 +16,78 @@
     <loc>https://caiara.com.br/apareca-no-google-chatgpt-e-ia/</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.91</priority>
+    <priority>0.93</priority>
+  </url>
+  <url>
+    <loc>https://caiara.com.br/sobre-caiara-tecnologia/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
+  </url>
+  <url>
+    <loc>https://caiara.com.br/o-que-a-caiara-faz/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://caiara.com.br/ireland/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://caiara.com.br/software-development-ireland/</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
     <loc>https://caiara.com.br/criacao-de-sites-em-niteroi/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
     <loc>https://caiara.com.br/desenvolvimento-de-software-rio-de-janeiro/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://caiara.com.br/brasil/</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://caiara.com.br/empresa-de-software-e-ux-para-sistemas-complexos/</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.92</priority>
+    <priority>0.89</priority>
   </url>
   <url>
-    <loc>https://caiara.com.br/portugal/</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://caiara.com.br/como-automatizar-processos-com-ia/</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://caiara.com.br/ux-para-sistemas-complexos/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://caiara.com.br/sistemas-internos-e-plataformas-operacionais/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://caiara.com.br/software-sob-medida-para-operacoes-complexas/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://caiara.com.br/criacao-de-sites-e-landing-pages/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://caiara.com.br/automacao-ia-para-equipes-e-processos/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://caiara.com.br/diagnostico-de-produto-ou-operacao/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://caiara.com.br/ux-design-rio-de-janeiro/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://caiara.com.br/desenvolvimento-software-rio-de-janeiro/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://caiara.com.br/automacao-ia-rio-de-janeiro/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.89</priority>
   </url>
   <url>
     <loc>https://caiara.com.br/contato/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://caiara.com.br/governo-digital-e-sistemas-publicos/</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://caiara.com.br/llms.txt</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.86</priority>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://caiara.com.br/ai-sitemap.md</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.45</priority>
+  </url>
+  <url>
+    <loc>https://caiara.com.br/resumo-caiara.txt</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.45</priority>
   </url>
 </urlset>
